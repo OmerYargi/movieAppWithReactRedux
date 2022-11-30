@@ -1,0 +1,19 @@
+#sideBar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: $dark;
+    @include flex($direction: column, $ai: flex-start);
+    overflow-y: auto;
+
+    button {
+        color: $light;
+        background-color: initial;
+        padding: 10px 1.5rem;
+        cursor: pointer;
+        h2{
+            font-size: 1rem;
+        }
+    }
+}

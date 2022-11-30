@@ -1,0 +1,42 @@
+#movie {
+    width: 100%;
+    margin-top: -15%;
+
+    .cardwrapper {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .movieCard {
+            width: 200px;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 5px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+
+            &:hover {
+                .cardTitle {
+                    opacity: 1;
+                    bottom: 0;
+                }
+            }
+
+            .cardTitle {
+                color: $light;
+                background-image: linear-gradient(to top, $primary-color, transparent);
+                opacity: 0;
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+                transition: all .3s;
+                position: absolute;
+                bottom: -35px;
+            }
+        }
+    }
+}

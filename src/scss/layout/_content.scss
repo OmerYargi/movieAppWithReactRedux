@@ -1,0 +1,17 @@
+#content {
+    width: calc(100% - 200px);
+    height: 100vh;
+    @include flex($ai: flex-start);
+    flex-flow: row wrap;
+    background-color: $dark;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: auto;
+
+    .vitrinPicture{
+        @include backgroundImage(url("https://images2.alphacoders.com/851/85182.jpg"));
+        width: 100%;
+        height: 60%;
+    }
+}

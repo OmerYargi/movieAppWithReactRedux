@@ -1,0 +1,12 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/reset";
+
+@import "layout/app";
+@import "layout/sideBar";
+@import "layout/content";
+@import "layout/details";
+@import "layout/movie";
+
+@import "vendor/media";

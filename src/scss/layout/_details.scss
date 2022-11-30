@@ -1,0 +1,60 @@
+#details {
+    @include flex($jc: flex-start, $ai: flex-start);
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    background-color: #fff;
+    padding: 1rem;
+
+    .detailsLeft {
+        width: 45%;
+
+        .detailsPicture {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 250px;
+            margin-left: auto;
+            margin-top: -50px;
+            margin-right: 50px;
+        }
+    }
+
+    .detailsContent {
+
+        width: 30%;
+
+        h2 {
+            margin: .8rem 0;
+        }
+
+        .detailsContentPoint {
+            display: flex;
+            justify-content: space-between;
+            margin: .8rem 0;
+
+            p {
+                position: relative;
+                width: 8rem;
+                text-align: center;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    &::after {
+                        content: '';
+                        width: 1px;
+                        height: 100%;
+                        color: $secondary-color;
+                        background-color: black;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
